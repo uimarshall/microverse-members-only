@@ -10,6 +10,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <%= link_to "FUNNY BLOG", root_path, class: 'navbar-brand' %>
+      <ul class="navbar-nav ml-auto">
+        
+        <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to 'Log out',  destroy_user_session_path, method: 'delete', data: { confirm: 'Are you sure?' }, class: 'nav-link text-danger'  %>
+        </li>
+        <% else %>
+        <li class="nav-item"><%= link_to 'Sign in',  new_user_session_path, class: 'nav-link'  %></li>
+        <li class="nav-item"><%= link_to 'Sign up',  new_user_registration_path, class: 'nav-link'  %></li>
+        <% end %>
+      </ul>
+    </nav>
+    <div class="container-fluid w-75 mx-auto">
+      <%= yield %>
+    </div>
   </body>
 </html>
