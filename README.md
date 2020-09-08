@@ -6,7 +6,7 @@
 
 members can write embarrassing posts about non-members. Inside the app, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
 
-> In this project, we built a `members-only` app following the [jumpstartlab.com](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication) tutorial.<br>
+> In this project, we built a `members-only` app following the [Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication) tutorial.<br>
 
 ## Live demo:
 
