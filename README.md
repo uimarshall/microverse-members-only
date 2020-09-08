@@ -8,12 +8,24 @@ members can write embarrassing posts about non-members. Inside the app, members 
 
 > In this project, we built a `members-only` app following the [jumpstartlab.com](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication) tutorial.<br>
 
+## Live demo:
+
+[Members only](https://microverse-rails-members-only.herokuapp.com/)
+
 ## Built With
 
 - Ruby
 - Ruby on Rails
-- Sqlite3
-- devise gem
+- Sqlite3/Postgres
+- Rubocop
+
+## Extra Ruby gems
+
+- devise
+
+## Deployed on:
+
+- Heroku
 
 ## Feature upgrades:
 
