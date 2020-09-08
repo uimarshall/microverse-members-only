@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <nav>
+      <ul class="nav-right">
+        <li class="nav-item">
+          <%= link_to 'Log out',  destroy_user_session_path, method: 'delete', data: { confirm: 'Are you sure?' }, class: 'nav-link'  %>
+        </li>
+        <li><%= link_to 'Sign in',  new_user_session_path, class: 'nav-link'  %></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
